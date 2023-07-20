@@ -32,6 +32,11 @@
             this.tempertureData = new System.Windows.Forms.Label();
             this.dataRecivedAt = new System.Windows.Forms.Label();
             this.stopUpdating = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.humidityData = new System.Windows.Forms.Label();
+            this.pressureData = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // showFareniht
@@ -47,7 +52,7 @@
             // tempertureData
             // 
             this.tempertureData.AutoSize = true;
-            this.tempertureData.Location = new System.Drawing.Point(89, 51);
+            this.tempertureData.Location = new System.Drawing.Point(121, 45);
             this.tempertureData.Name = "tempertureData";
             this.tempertureData.Size = new System.Drawing.Size(24, 15);
             this.tempertureData.TabIndex = 1;
@@ -63,7 +68,7 @@
             // 
             // stopUpdating
             // 
-            this.stopUpdating.Location = new System.Drawing.Point(70, 101);
+            this.stopUpdating.Location = new System.Drawing.Point(60, 119);
             this.stopUpdating.Name = "stopUpdating";
             this.stopUpdating.Size = new System.Drawing.Size(75, 23);
             this.stopUpdating.TabIndex = 3;
@@ -71,10 +76,58 @@
             this.stopUpdating.UseVisualStyleBackColor = true;
             this.stopUpdating.Click += new System.EventHandler(this.stopUpdating_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(27, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 15);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Temperature";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(27, 73);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(57, 15);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Humidity";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(27, 101);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(51, 15);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Pressure";
+            // 
+            // humidityData
+            // 
+            this.humidityData.AutoSize = true;
+            this.humidityData.Location = new System.Drawing.Point(121, 73);
+            this.humidityData.Name = "humidityData";
+            this.humidityData.Size = new System.Drawing.Size(0, 15);
+            this.humidityData.TabIndex = 7;
+            // 
+            // pressureData
+            // 
+            this.pressureData.AutoSize = true;
+            this.pressureData.Location = new System.Drawing.Point(121, 101);
+            this.pressureData.Name = "pressureData";
+            this.pressureData.Size = new System.Drawing.Size(0, 15);
+            this.pressureData.TabIndex = 8;
+            // 
             // TemperatureDisplay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pressureData);
+            this.Controls.Add(this.humidityData);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.stopUpdating);
             this.Controls.Add(this.dataRecivedAt);
             this.Controls.Add(this.tempertureData);
@@ -92,5 +145,10 @@
         private Label tempertureData;
         private Label dataRecivedAt;
         private Button stopUpdating;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label humidityData;
+        private Label pressureData;
     }
 }

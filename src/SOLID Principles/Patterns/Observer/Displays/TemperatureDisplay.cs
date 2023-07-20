@@ -39,6 +39,8 @@ namespace Observer.Displays
             this.Invoke(new MethodInvoker(delegate ()
             {
                 tempertureData.Text = temperature + " " + suffix;
+                humidityData.Text = value.Humadity.ToString();
+                pressureData.Text = value.Presurre.ToString();
                 dataRecivedAt.Text = DateTime.Now.ToString("yy-MM-dd HH-mm-ss");
             }));
         }
